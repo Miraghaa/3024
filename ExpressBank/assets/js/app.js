@@ -162,8 +162,7 @@ document.querySelector('.inp5').addEventListener("input", update5);
 
 
 window.onscroll = function(){
-
-  if( document.documentElement.scrollTop>150){
+  if( document.body.scrollTop>150 || document.documentElement.scrollTop>150){
       document.querySelector('header').style.backgroundColor = 'white'
   }
 }

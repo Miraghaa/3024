@@ -1,7 +1,8 @@
 header {
   position: sticky;
   top: 0;
-  z-index: 1500;
+  z-index: 1600;
+  background-color: #fff;
 }
 header .containers-tel {
   display: none;
@@ -235,7 +236,6 @@ header .containers-big .header-left .third-ul .l1 ul li a {
 header .containers-big .header-left .third-ul .l1 ul li a div {
   width: 48px;
   height: 48px;
-  float: left;
   display: inline-block;
   margin-right: 14px;
 }
@@ -337,7 +337,6 @@ header .containers-big .header-left .third-ul .l3 ul li a {
 header .containers-big .header-left .third-ul .l3 ul li a div {
   width: 48px;
   height: 48px;
-  float: left;
   display: inline-block;
   margin-right: 14px;
 }
@@ -742,20 +741,20 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   width: 100%;
 }
 
-main .slider {
+.indexmain .slider {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   overflow: hidden;
 }
-main .slider .container-main .slider-all {
+.indexmain .slider .container-main .slider-all {
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   margin-top: 5px;
 }
-main .slider .container-main .slider-all .slider-next {
+.indexmain .slider .container-main .slider-all .slider-next {
   cursor: pointer;
   position: absolute;
   top: 25px;
@@ -769,7 +768,7 @@ main .slider .container-main .slider-all .slider-next {
   display: flex;
   justify-content: center;
 }
-main .slider .container-main .slider-all .slider-back {
+.indexmain .slider .container-main .slider-all .slider-back {
   cursor: pointer;
   position: absolute;
   top: 25px;
@@ -783,16 +782,16 @@ main .slider .container-main .slider-all .slider-back {
   display: flex;
   justify-content: center;
 }
-main .slider .container-main .slider-all .slider-text {
+.indexmain .slider .container-main .slider-all .slider-text {
   width: 50%;
   padding-top: 100px;
   margin-bottom: -5px;
   margin-left: 100px;
 }
-main .slider .container-main .slider-all .slider-text div {
+.indexmain .slider .container-main .slider-all .slider-text div {
   flex-direction: column;
 }
-main .slider .container-main .slider-all .slider-text div h1 {
+.indexmain .slider .container-main .slider-all .slider-text div h1 {
   font-family: P-Nova;
   margin-top: 32px;
   font-style: normal;
@@ -802,7 +801,7 @@ main .slider .container-main .slider-all .slider-text div h1 {
   letter-spacing: 0.06em;
   color: #231F20;
 }
-main .slider .container-main .slider-all .slider-text div p {
+.indexmain .slider .container-main .slider-all .slider-text div p {
   font-family: P-Nova;
   margin-top: 48px;
   font-style: normal;
@@ -812,7 +811,7 @@ main .slider .container-main .slider-all .slider-text div p {
   letter-spacing: 0.06em;
   color: #5F6369;
 }
-main .slider .container-main .slider-all .slider-text div a {
+.indexmain .slider .container-main .slider-all .slider-text div a {
   margin-top: 40px;
   font-family: P-Nova;
   border-radius: 8px;
@@ -828,26 +827,26 @@ main .slider .container-main .slider-all .slider-text div a {
   border: none;
   color: #231F20;
 }
-main .slider .container-main .slider-all .slider-text div a:hover {
+.indexmain .slider .container-main .slider-all .slider-text div a:hover {
   background: #F58220;
 }
-main .slider .container-main .slider-all .slider-photo {
+.indexmain .slider .container-main .slider-all .slider-photo {
   margin-right: -81px;
   width: 50%;
 }
-main .slider .container-main .slider-all .slider-photo img {
+.indexmain .slider .container-main .slider-all .slider-photo img {
   width: 87%;
 }
-main .slider .container-main .slider-all .slider-text2 {
+.indexmain .slider .container-main .slider-all .slider-text2 {
   width: 50%;
   padding-top: 100px;
   margin-bottom: -5px;
   margin-left: 100px;
 }
-main .slider .container-main .slider-all .slider-text2 div {
+.indexmain .slider .container-main .slider-all .slider-text2 div {
   flex-direction: column;
 }
-main .slider .container-main .slider-all .slider-text2 div h1 {
+.indexmain .slider .container-main .slider-all .slider-text2 div h1 {
   font-family: P-Nova;
   margin-top: 32px;
   font-style: normal;
@@ -857,7 +856,7 @@ main .slider .container-main .slider-all .slider-text2 div h1 {
   letter-spacing: 0.06em;
   color: #231F20;
 }
-main .slider .container-main .slider-all .slider-text2 div p {
+.indexmain .slider .container-main .slider-all .slider-text2 div p {
   font-family: P-Nova;
   margin-top: 48px;
   font-style: normal;
@@ -867,7 +866,7 @@ main .slider .container-main .slider-all .slider-text2 div p {
   letter-spacing: 0.06em;
   color: #5F6369;
 }
-main .slider .container-main .slider-all .slider-text2 div a {
+.indexmain .slider .container-main .slider-all .slider-text2 div a {
   margin-top: 40px;
   font-family: P-Nova;
   border-radius: 8px;
@@ -883,31 +882,31 @@ main .slider .container-main .slider-all .slider-text2 div a {
   border: none;
   color: #231F20;
 }
-main .slider .container-main .slider-all .slider-text2 div a:hover {
+.indexmain .slider .container-main .slider-all .slider-text2 div a:hover {
   background: #F58220;
 }
-main .slider .container-main .slider-all .slider-photo2 {
+.indexmain .slider .container-main .slider-all .slider-photo2 {
   display: none;
   margin-right: -81px;
   width: 50%;
 }
-main .slider .container-main .slider-all .slider-photo2 img {
+.indexmain .slider .container-main .slider-all .slider-photo2 img {
   width: 65%;
 }
-main .tab-menu {
+.indexmain .tab-menu {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   background-color: #f5f5f5;
 }
-main .tab-menu .container-main .tab-menu-all .tab-button {
+.indexmain .tab-menu .container-main .tab-menu-all .tab-button {
   display: flex;
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid #D7D8D6;
   padding-top: 28px;
 }
-main .tab-menu .container-main .tab-menu-all .tab-button button {
+.indexmain .tab-menu .container-main .tab-menu-all .tab-button button {
   position: relative;
   background-color: inherit;
   float: left;
@@ -921,7 +920,7 @@ main .tab-menu .container-main .tab-menu-all .tab-button button {
   letter-spacing: 0.06em;
   font-size: 18px;
 }
-main .tab-menu .container-main .tab-menu-all .tab-button .tab-buttons::before {
+.indexmain .tab-menu .container-main .tab-menu-all .tab-button .tab-buttons::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -930,18 +929,18 @@ main .tab-menu .container-main .tab-menu-all .tab-button .tab-buttons::before {
   bottom: 0px;
   z-index: 10000;
 }
-main .tab-menu .container-main .tab-menu-alls {
+.indexmain .tab-menu .container-main .tab-menu-alls {
   display: flex;
   flex-wrap: wrap;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
   margin-left: -12px;
   margin-bottom: 20px;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card {
   margin-right: 15px;
   margin-left: 4px;
   position: relative;
@@ -951,7 +950,7 @@ main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card {
   flex: 0 0 25%;
   max-width: 25%;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-photo {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-photo {
   position: absolute;
   top: -15px;
   left: 0;
@@ -961,17 +960,17 @@ main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-phot
   display: block;
   text-align: center;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-photo img {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-photo img {
   height: auto;
   max-width: 100%;
   max-height: 100%;
   display: inline-block;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content {
   margin-top: 200px;
   font-family: P-Nova;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content h4 {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content h4 {
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.12em;
@@ -983,14 +982,14 @@ main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-cont
   display: inline-block;
   margin-left: 20px;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content h3 {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content h3 {
   line-height: 120%;
   margin-top: 20px;
   font-size: 22px;
   letter-spacing: 0.06em;
   margin-left: 20px;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content a {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content a {
   display: inline-block;
   margin-left: 20px;
   border-radius: 8px;
@@ -1005,17 +1004,17 @@ main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-cont
   background-color: #f5f5f5;
   color: #231F20;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content a:hover {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-card-all .tab-card .card-content a:hover {
   background-color: #F58220;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all {
   display: flex;
   padding: 41px 0px;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news {
   flex-direction: column;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card {
   min-height: 335px;
   margin-right: -10px;
   margin-left: -45px;
@@ -1023,7 +1022,7 @@ main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card
   padding: 0 12px 0 12px;
   display: flex;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card .news-content {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card .news-content {
   margin-left: 20px;
   min-height: 335px;
   font-family: P-Nova;
@@ -1037,14 +1036,14 @@ main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card
   flex: 0 0 33.333333%;
   max-width: 32%;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card .news-content h5 {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card .news-content h5 {
   font-size: 22px;
   line-height: 160%;
   letter-spacing: 0.06em;
   color: #231F20;
   margin-top: 0px;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card .news-content div {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card .news-content div {
   letter-spacing: 0.06em;
   color: #5F6369;
   font-size: 18px;
@@ -1052,7 +1051,7 @@ main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .news-card
   bottom: 25px;
   position: absolute;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .btnn {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .btnn {
   flex-basis: 0;
   flex-grow: 1;
   min-width: 0;
@@ -1060,7 +1059,7 @@ main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .btnn {
   position: relative;
   width: 100%;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .btnn a {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .btnn a {
   margin-left: -10px;
   width: 101%;
   margin-top: 35px;
@@ -1076,22 +1075,22 @@ main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .btnn a {
   background: #fff;
   color: #231F20;
 }
-main .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .btnn a:hover {
+.indexmain .tab-menu .container-main .tab-menu-alls .tab-news-all .tab-news .btnn a:hover {
   background: #F58220;
 }
-main .calculator {
+.indexmain .calculator {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-main .calculator .container-main .calc-menu-buttons .calc-button {
+.indexmain .calculator .container-main .calc-menu-buttons .calc-button {
   display: flex;
   overflow: hidden;
   width: 100%;
   border-bottom: 1px solid #D7D8D6;
   padding-top: 28px;
 }
-main .calculator .container-main .calc-menu-buttons .calc-button button {
+.indexmain .calculator .container-main .calc-menu-buttons .calc-button button {
   position: relative;
   background-color: inherit;
   float: left;
@@ -1105,7 +1104,7 @@ main .calculator .container-main .calc-menu-buttons .calc-button button {
   letter-spacing: 0.06em;
   font-size: 18px;
 }
-main .calculator .container-main .calc-menu-buttons .calc-button .calc-buttons::before {
+.indexmain .calculator .container-main .calc-menu-buttons .calc-button .calc-buttons::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1114,31 +1113,31 @@ main .calculator .container-main .calc-menu-buttons .calc-button .calc-buttons::
   bottom: 0px;
   z-index: 10000;
 }
-main .calculator .container-main .bank-calc-all {
+.indexmain .calculator .container-main .bank-calc-all {
   margin: 20px 0px;
   background-color: #fff;
 }
-main .calculator .container-main .bank-calc-all h4 {
+.indexmain .calculator .container-main .bank-calc-all h4 {
   font-family: P-Nova;
   font-size: 22px;
   font-weight: 600;
   letter-spacing: 0.06em;
   margin: 20px 0;
 }
-main .calculator .container-main .bank-calc-all .bank-calc {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc {
   border: 1px solid #ededed;
   display: flex;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 20px 8px #ededed;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp {
   display: flex;
   flex-direction: column;
   padding-left: 0px;
   margin: 40px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp h5 {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp h5 {
   font-family: P-Nova;
   font-style: normal;
   font-weight: 600;
@@ -1149,17 +1148,17 @@ main .calculator .container-main .bank-calc-all .bank-calc .all-inp h5 {
   margin-bottom: 45px;
   margin-left: 20px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp {
   margin: 10px;
   position: relative;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .inptext {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .inptext {
   width: 150%;
   border-radius: 15px;
   border: 1px solid #ededed;
   padding: 25px 30px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .linex {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .linex {
   position: absolute;
   width: 87%;
   left: 10px;
@@ -1167,14 +1166,14 @@ main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .linex 
   height: 2px;
   background-color: #FAA61A;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .select {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .select {
   width: 8%;
   border: none;
   position: absolute;
   top: 35px;
   right: -120px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .range {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .range {
   position: absolute;
   top: 73px;
   left: 9px;
@@ -1186,7 +1185,7 @@ main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .range 
   border: none;
   background-color: #e2e2e2;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .range::-webkit-slider-thumb {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
@@ -1195,7 +1194,7 @@ main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .range:
   border: 1px solid #ededed;
   cursor: pointer;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp div {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp div {
   position: absolute;
   top: 10px;
   left: 35px;
@@ -1205,20 +1204,20 @@ main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp div {
   letter-spacing: 0.03em;
   color: #5F6369;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .value, main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .value1, main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .value2 {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .value, .indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .value1, .indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .value2 {
   position: absolute;
   top: 35px;
   left: 35px;
   font-family: P-Nova;
   font-size: 20px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .manat {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .manat {
   position: absolute;
   top: 30px;
   right: -110px;
   font-family: P-Nova;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .manat::before {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .manat::before {
   content: "";
   position: absolute;
   top: 22px;
@@ -1227,20 +1226,20 @@ main .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .manat:
   height: 1px;
   background-color: #F58220;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-line {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-line {
   margin: 45px 250px;
   width: 0.1%;
   height: 100;
   background-color: #ededed;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-show {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show {
   margin-top: 45px;
   display: flex;
   flex-direction: column;
   width: 40%;
   margin-left: -200px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-head h5 {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-head h5 {
   font-family: P-Nova;
   font-style: normal;
   font-weight: 600;
@@ -1250,16 +1249,16 @@ main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show
   color: #231F20;
   margin-bottom: 45px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-manat {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-manat {
   display: flex;
   margin-top: 50px;
   justify-content: space-between;
   padding: 0px 150px 0px 0px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-manat span {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-manat span {
   font-size: 20px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-manat p {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-manat p {
   font-family: P-Nova;
   font-size: 16px;
   line-height: 120%;
@@ -1267,11 +1266,11 @@ main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show
   color: #5F6369;
   display: block;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-go {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-go {
   margin-top: 50px;
   width: 100%;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-go a {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-go a {
   font-family: P-Nova;
   text-align: center;
   padding: 15px 0px;
@@ -1288,23 +1287,23 @@ main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show
   border-radius: 10px;
   transition: 0.5s;
 }
-main .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-go a:hover {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-go a:hover {
   background: #FAA61A;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil {
   border: 1px solid #ededed;
   display: flex;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 20px 8px #ededed;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp {
   display: flex;
   flex-direction: column;
   padding-left: 0px;
   margin: 40px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp h5 {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp h5 {
   font-family: P-Nova;
   font-style: normal;
   font-weight: 600;
@@ -1315,17 +1314,17 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp h5 {
   margin-bottom: 45px;
   margin-left: 20px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp {
   margin: 10px;
   position: relative;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .inptext {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .inptext {
   width: 150%;
   border-radius: 15px;
   border: 1px solid #ededed;
   padding: 25px 30px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .linex {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .linex {
   position: absolute;
   width: 140%;
   left: 10px;
@@ -1333,7 +1332,7 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .
   height: 2px;
   background-color: #FAA61A;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .select {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .select {
   width: 137%;
   border: none;
   outline: none;
@@ -1343,12 +1342,12 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .
   font-family: P-Nova;
   font-size: 20px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .select option {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .select option {
   font-family: P-Nova;
   font-weight: bold;
   margin-top: 50px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range {
   position: absolute;
   top: 73px;
   left: 9px;
@@ -1360,7 +1359,7 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .
   border: none;
   background-color: #e2e2e2;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range::-webkit-slider-thumb {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
@@ -1369,7 +1368,7 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .
   border: 1px solid #ededed;
   cursor: pointer;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range1 {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range1 {
   position: absolute;
   top: 73px;
   left: 9px;
@@ -1381,10 +1380,10 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .
   border: none;
   background-color: #e2e2e2;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range1::-webkit-slider-thumb {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range1::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp div {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp div {
   position: absolute;
   top: 10px;
   left: 35px;
@@ -1394,20 +1393,20 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp d
   letter-spacing: 0.03em;
   color: #5F6369;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .values, main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .value6, main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .value7 {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .values, .indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .value6, .indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .value7 {
   position: absolute;
   top: 35px;
   left: 35px;
   font-family: P-Nova;
   font-size: 20px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .manat {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .manat {
   position: absolute;
   top: 30px;
   right: -110px;
   font-family: P-Nova;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .manat::before {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .manat::before {
   content: "";
   position: absolute;
   top: 22px;
@@ -1416,20 +1415,20 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .
   height: 1px;
   background-color: #F58220;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-line {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-line {
   margin: 45px 250px;
   width: 0.1%;
   height: 100;
   background-color: #ededed;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show {
   margin-top: 45px;
   display: flex;
   flex-direction: column;
   width: 40%;
   margin-left: -200px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-head h5 {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-head h5 {
   font-family: P-Nova;
   font-style: normal;
   font-weight: 600;
@@ -1439,13 +1438,13 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .ban
   color: #231F20;
   margin-bottom: 45px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-manat {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-manat {
   display: flex;
   margin-top: 50px;
   justify-content: space-between;
   padding: 0px 150px 0px 0px;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-manat p {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-manat p {
   font-family: P-Nova;
   font-size: 16px;
   line-height: 120%;
@@ -1453,11 +1452,11 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .ban
   color: #5F6369;
   display: block;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-go {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-go {
   margin-top: 50px;
   width: 100%;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-go a {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-go a {
   font-family: P-Nova;
   text-align: center;
   padding: 15px 0px;
@@ -1474,10 +1473,10 @@ main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .ban
   border-radius: 10px;
   transition: 0.5s;
 }
-main .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-go a:hover {
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-go a:hover {
   background: #FAA61A;
 }
-main .section-son {
+.indexmain .section-son {
   margin: 120px 0px 10px;
   background-image: url(../photos/sectionaxir/24bg.png);
   width: 100%;
@@ -1485,32 +1484,32 @@ main .section-son {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .section-son .container-main .son-hisse {
+.indexmain .section-son .container-main .son-hisse {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-main .section-son .container-main .son-hisse .son-hisse-photo {
+.indexmain .section-son .container-main .son-hisse .son-hisse-photo {
   position: absolute;
   top: -30px;
   left: 0;
 }
-main .section-son .container-main .son-hisse .son-hisse-photo img {
+.indexmain .section-son .container-main .son-hisse .son-hisse-photo img {
   width: 90%;
 }
-main .section-son .container-main .son-hisse .son-hisse-text {
+.indexmain .section-son .container-main .son-hisse .son-hisse-text {
   display: flex;
   flex-direction: column;
   margin: 62px 50px 0px auto;
 }
-main .section-son .container-main .son-hisse .son-hisse-text h3 {
+.indexmain .section-son .container-main .son-hisse .son-hisse-text h3 {
   font-family: P-Nova;
   font-size: 36px;
   line-height: 120%;
   letter-spacing: 0.06em;
   color: #FFF;
 }
-main .section-son .container-main .son-hisse .son-hisse-text .p1 {
+.indexmain .section-son .container-main .son-hisse .son-hisse-text .p1 {
   font-family: P-Nova;
   font-size: 20px;
   line-height: 160%;
@@ -1518,18 +1517,155 @@ main .section-son .container-main .son-hisse .son-hisse-text .p1 {
   color: #FFF;
   margin-top: 30px;
 }
-main .section-son .container-main .son-hisse .son-hisse-text .p2 {
+.indexmain .section-son .container-main .son-hisse .son-hisse-text .p2 {
   font-size: 18px;
   line-height: 160%;
   letter-spacing: 0.06em;
   color: #FFF;
 }
-main .section-son .container-main .son-hisse .son-hisse-qr {
+.indexmain .section-son .container-main .son-hisse .son-hisse-qr {
   width: 20%;
   margin-top: 65px;
 }
-main .section-son .container-main .son-hisse .son-hisse-qr img {
+.indexmain .section-son .container-main .son-hisse .son-hisse-qr img {
   width: 86%;
+}
+
+.information-generals-main .all-informations .information-head {
+  background-image: url(../photos/sectionaxir/24bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.information-generals-main .all-informations .information-head div {
+  padding-top: 20px;
+}
+.information-generals-main .all-informations .information-head div ul {
+  display: flex;
+  margin-left: -30px;
+}
+.information-generals-main .all-informations .information-head div ul li {
+  font-family: P-Nova;
+  display: inline-block;
+  margin-right: 16px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.information-generals-main .all-informations .information-head h3 {
+  font-family: P-Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  margin: 0px 0 0px 0;
+  max-width: 720px;
+  margin-bottom: 0 !important;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.information-generals-main .all-informations .information-boxs {
+  background-color: #f5f5f5;
+  padding: 10px 260px 10px 240px;
+}
+.information-generals-main .all-informations .information-boxs .information-box {
+  margin: 30px 0px;
+}
+.information-generals-main .all-informations .information-boxs .information-box ul {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px 80px;
+  align-items: center;
+}
+.information-generals-main .all-informations .information-boxs .information-box ul li h4 {
+  font-family: P-Nova;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  margin-left: 100px;
+}
+.information-generals-main .all-informations .information-boxs .information-box ul li a {
+  font-family: P-Nova;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #231F20;
+  border-radius: 8px;
+  padding: 12px 30px;
+  margin-left: 780px;
+  text-align: center;
+  display: block;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.12em;
+  transition: background 0.2s;
+  background: #F9C20A;
+  color: #231F20;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul1 li img {
+  width: 110%;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul1 li h4 {
+  width: 100%;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul2 li img {
+  width: 85%;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul2 li h4 {
+  margin-left: 60px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul2 li a {
+  margin-left: 760px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul3 li h4 {
+  margin-left: 80px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul3 li a {
+  margin-left: 805px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul4 li h4 {
+  width: 230%;
+  margin-left: 90px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul4 li a {
+  margin-left: 365px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul5 {
+  padding: 25px 0px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul5 li img {
+  width: 80%;
+  margin-left: 70px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul5 li h4 {
+  width: 100%;
+  margin-left: 115px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul5 li a {
+  margin-right: 115px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul6 li img {
+  width: 115%;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul6 li h4 {
+  margin-left: 110px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul6 li a {
+  margin-left: 790px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul7 h4 {
+  width: 130%;
+  margin-left: 80px;
+}
+.information-generals-main .all-informations .information-boxs .information-box .ul7 a {
+  margin-left: 655px;
 }
 
 @media only screen and (min-width: 1120px) and (max-width: 1400px) {
