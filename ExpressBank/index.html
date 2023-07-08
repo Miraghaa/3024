@@ -342,8 +342,7 @@
             </div>
             
         </div>
-        <div>
-            <div class="containers-big">
+        <div class="containers-big">
                 <div class="second-head">
                    <nav>
                         <div class="second-head-nav-left">
@@ -425,7 +424,6 @@
                         </div>
                    </nav>
                 </div>
-            </div>
         </div>
     </header>
     <main>   
@@ -541,39 +539,39 @@
             <div class="container-main">
                 <div class="calc-menu-buttons">
                     <div class="calc-button">
-                        <button class="calc-buttons">İpoteka krediti</button>
-                        <button>Qızıl girovlu kredit</button>
-                        <button>Valyuta məzənnəsi</button>
+                        <button id="1" class="calc-buttons">İpoteka krediti</button>
+                        <button id="2">Qızıl girovlu kredit</button>
+                        <button id="3">Valyuta məzənnəsi</button>
                     </div>
                 </div>
                 <div class="bank-calc-all">
                     <h4>Kalkulyator</h4>
-                    <div class="bank-calc">
+                    <div id="2" class=" bank-calc">
                         <div class="all-inp">
                             <h5>Məlumatları daxil edin</h5>
-                            <div class="inp">
-                                <input class="inptext" type="text">
+                            <div class="inp inp1">
+                                <input readonly disabled class="inptext" type="text">
                                 <input class="range" type="range" name="range" id="range1" step="100" min="5000" max="150000" value="5000">
                                 <div> Kreditin məbləği</div>
                                 <span class="value1">5000</span>
                                 <span class="manat">AZN</span>
                             </div>
-                            <div class="inp">
-                                <input class="inptext" type="text">
+                            <div class="inp inp2">
+                                <input readonly disabled class="inptext" type="text">
                                 <input class="range" type="range" name="range" id="range2" step="1" min="12" max="360" value="48">
                                 <div> Kreditin müddəti (Ay)</div>
                                 <span class="value2">48</span>                            </div>
                             <div class="inp">
-                                <input class="inptext" type="text">  
+                                <input readonly  class="inptext" type="text">  
                                 <div> İpotekanın növü</div>
                                 <select class="select" name="" id="">
                                     <option value="">STANDART</option>
                                     <option value="">GÜZƏŞTLİ</option>
                                 </select>                            
                             </div>
-                            <div class="inp">
-                                <input class="inptext" type="text">
-                                <input class="range" type="range" name="range" id="range3" min="4" max="10" value="8">
+                            <div class="inp inp3">
+                                <input readonly disabled class="inptext" type="text">
+                                <input disabled class="range" type="range" name="range" id="range3" min="4" max="10" value="8">
                                 <div> Faiz dərəcəsi</div>
                                 <span class="value">8</span>
                                 <span class="linex"></span>
@@ -598,6 +596,79 @@
                                 <a href="">SİFARİŞ ETMƏK</a>
                              </div>
                         </div>
+                    </div>
+                    <div id="1" class="bank-calc-qizil  d-none">
+                        <div class="all-inp">
+                            <h5>Məlumatları daxil edin</h5>
+                            <div class="inp inp4">
+                                <input readonly disabled class="inptext" type="text">
+                                <input class="range" type="range" name="range" id="rangeqizil" step="50" min="750" max="29500" value="750">
+                                <div> Kreditin məbləği</div>
+                                <span class="value6">750</span>
+                                <span class="manat">AZN</span>
+                            </div>
+                            <div class="inp inp5">
+                                <input readonly disabled class="inptext" type="text">
+                                <input class="range" type="range" name="range" id="rangeqizil2" step="1" min="3" max="36" value="12">
+                                <div> Kreditin müddəti (Ay)</div>
+                                <span class="value7">12</span>                            
+                            </div>
+                            <div class="inp inp6">
+                                <input readonly disabled class="inptext" type="text">
+                                <input disabled class="range1" type="range" name="range" id="rangeqizil3" value="28">
+                                <div> Faiz dərəcəsi</div>
+                                <span class="values">28</span>
+                                <span class="linex"></span>
+                            </div>
+                            <div class="inp">
+                                <input readonly  class="inptext" type="text" value="">  
+                                <div> Əyar</div>
+                                <select class="select" name="" id="" >
+                                    <option value=""></option>
+                                    <option value="583">583</option>
+                                    <option value="750">750</option>
+                                </select>                            
+                            </div>
+                        </div>
+                        <div class="bank-line"></div>
+                        <div class="bank-show">
+                             <div class="bank-show-head">
+                                <h5>Nəticə</h5>
+                             </div>
+                             <div class="bank-show-manat">
+                                <div class="bank-show-month">
+                                    <span class="bank-show-months  bank-show-monthss"></span>
+                                    <p>Aylıq ödəniş</p>
+                                </div>
+                                <div class="bank-show-all">
+                                    <span class="bank-show-alls bank-show-allss"></span>
+                                    <p>Ümumi məbləğ</p>
+                                </div>
+                             </div>
+                             <div class="bank-show-go">
+                                <a href="">SİFARİŞ ETMƏK</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-son">
+            <div class="container-main">
+                <div class="son-hisse">
+                    <div class="son-hisse-photo">
+                          <img src="assets/photos/sectionaxir/mobile.23223495.png" alt="">
+                    </div>
+                    <div class="son-hisse-text">
+                          <h3>Express24 mobil tətbiqi</h3>
+                          <p class="p1">Express24 ilə 7/24 bank əməliyyatlarını bir toxunuşla <br> həyata keçirin!</p>
+                          <p class="p2">
+                            Telefonunuzun kamerası ilə QR kodu oxudun
+                            <img src="https://www.expressbank.az/assets/img/arrow_right.b2128581.svg" alt="">
+                          </p>
+                    </div>
+                    <div class="son-hisse-qr"> 
+                        <img src="https://adminpanel.expressbank.az//images/expressbank_442_1647344243.svg" alt="">
                     </div>
                 </div>
             </div>

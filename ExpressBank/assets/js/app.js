@@ -94,23 +94,22 @@ for(let calcs of calc_buttons){
     let clcs = document.querySelector('.calc-buttons')
     clcs.classList.remove('calc-buttons')
     calcs.classList.add('calc-buttons')
+
+
+    let id = calcs.id
+    let div = document.querySelectorAll('.bank-calc-all div')
+     
+    for(let divs of div){
+      if(divs.id === id){
+        divs.classList.add('d-none')
+      }else{
+        divs.classList.remove('d-none')
+      }
+    }
   }
 }
 // calculator
-let range1 = document.getElementById('range1')
-let range2 = document.getElementById('range2')
-
-range1.oninput = (e) => {
-  document.querySelector('.inp .value1').innerHTML = e.target.value;
-}
-range2.oninput = (e) => {
-  document.querySelector('.inp .value2').innerHTML = e.target.value;
-}
-
-
-
-
-
+// sade
 function calculate() {
   let a = parseFloat(document.getElementById('range1').value)
   let b = parseFloat(document.getElementById('range2').value)
@@ -124,20 +123,102 @@ function calculate() {
   document.querySelector('.bank-show .bank-show-alls').innerHTML = num1;
 }
 function update1() {
-  document.querySelector('.inp .value1').innerHTML = document.getElementById('range1').value;
+  document.querySelector('.inp1 .value1').innerHTML = document.getElementById('range1').value;
   calculate();
 }
 
 function update2() {
-  document.querySelector('.inp .value2').innerHTML = document.getElementById("range2").value;
+  document.querySelector('.inp2 .value2').innerHTML = document.getElementById("range2").value;
   calculate();
 }
 
-function update3() {
-  document.querySelector('.inp .value').innerHTML = document.getElementById('range3').value;
-  calculate();
+document.querySelector('.inp1').addEventListener("input", update1);
+document.querySelector('.inp2').addEventListener("input", update2);
+// qizil ucun
+function calculategold() {
+  let a = parseFloat(document.getElementById('rangeqizil').value)
+  let b = parseFloat(document.getElementById('rangeqizil2').value)
+  let c = parseFloat(document.getElementById('rangeqizil3').value)
+
+  num=(a*c)/100
+  num1=a+num;
+  num3=(num1/b).toFixed(2)
+
+  document.querySelector('.bank-show .bank-show-monthss').innerHTML = num3;
+  document.querySelector('.bank-show .bank-show-allss').innerHTML = num1;
+}
+function update4() {
+  document.querySelector('.inp4 .value6').innerHTML = document.getElementById('rangeqizil').value;
+  calculategold();
 }
 
-document.querySelector('.inp').addEventListener("input", update1);
-document.querySelector('.inp').addEventListener("input", update2);
-document.querySelector('.inp').addEventListener("input", update3);
+function update5() {
+  document.querySelector('.inp5 .value7').innerHTML = document.getElementById("rangeqizil2").value;
+  calculategold();
+}
+
+document.querySelector('.inp4').addEventListener("input", update4);
+document.querySelector('.inp5').addEventListener("input", update5);
+
+
+window.onscroll = function(){
+
+  if( document.documentElement.scrollTop>150){
+      document.querySelector('header').style.backgroundColor = 'white'
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const sliderContainer = document.querySelector('.slider-all');
+const slidertext = document.querySelectorAll('.slider-text, .slider-text2');
+const sliderphotos = document.querySelectorAll('.slider-photo, .slider-photo2');
+const slidernext = document.querySelector('.slider-next');
+const sliderback = document.querySelector('.slider-back');
+
+let x = 0;
+
+function showSlide(index) {
+  slidertext.forEach(text => text.style.display = 'none');
+  sliderphotos.forEach(photo => photo.style.display = 'none');
+
+  slidertext[index].style.display = 'block';
+  sliderphotos[index].style.display = 'block';
+}
+
+function NextSlide() {
+  x++;
+  if (x >= slidertext.length) {
+    x = 0;
+  }
+  showSlide(x);
+}
+
+function BackSlide() {
+  x--;
+  if (x < 0) {
+    x = slidertext.length - 1;
+  }
+  showSlide(x);
+}
+
+slidernext.onclick = () =>{
+  NextSlide()
+}
+sliderback.onclick = () => {
+  BackSlide()
+}
+setInterval(() => {
+    NextSlide()
+}, 2000);
