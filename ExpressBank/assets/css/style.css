@@ -1668,6 +1668,200 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   margin-left: 655px;
 }
 
+.queue {
+  background-color: #f6f6f6;
+}
+.queue .onlinequeue-main {
+  margin-top: 40px;
+}
+.queue .onlinequeue-main .queue-head {
+  display: flex;
+  justify-content: space-between;
+}
+.queue .onlinequeue-main .queue-head .queue-text h1 {
+  font-family: P-Nova;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.queue .onlinequeue-main .choose-queue {
+  border-bottom: 1px solid #e4e4e8;
+  display: flex;
+}
+.queue .onlinequeue-main .choose-queue div {
+  padding: 3rem 2.5rem 0.5rem 0rem;
+}
+.queue .onlinequeue-main .choose-queue div h1 {
+  font-family: P-Nova;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #a4a4a4;
+}
+.queue .onlinequeue-main .choose-queue .queue-choose1 h1 {
+  color: #ffc533;
+  position: relative;
+}
+.queue .onlinequeue-main .choose-queue .queue-choose1 h1::after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffc533;
+}
+.queue .onlinequeue-main .queue-search {
+  display: flex;
+  margin: 15px 0px;
+}
+.queue .onlinequeue-main .queue-search .search-input {
+  width: 75%;
+  position: relative;
+}
+.queue .onlinequeue-main .queue-search .search-input input {
+  font-family: P-Nova;
+  padding: 10px 0px 10px 35px;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #5f6369;
+}
+.queue .onlinequeue-main .queue-search .search-input i {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  color: #5F6369;
+  font-size: 13px;
+}
+.queue .onlinequeue-main .queue-search .search-nav {
+  margin-top: 2px;
+  margin-left: 25px;
+  width: 25%;
+}
+.queue .onlinequeue-main .queue-search .search-nav button {
+  font-family: P-Nova;
+  width: 50%;
+  padding: 9px;
+  box-shadow: none;
+  border: none;
+  text-align: center;
+}
+.queue .onlinequeue-main .queue-search .search-nav .serach-btn2 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: -5px;
+  transition: 0.1s;
+}
+.queue .onlinequeue-main .queue-search .search-nav .serach-btn2:hover {
+  color: #fff;
+  background-color: #5f6369;
+}
+.queue .onlinequeue-main .queue-search .search-nav .serach-btn1 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+  background-color: #5f6369;
+}
+.queue .onlinequeue-main .queue-card {
+  margin-top: 20px;
+  width: 100%;
+  padding: 1rem 0rem 1rem;
+  border: 1px solid #d3d2d2;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.queue .onlinequeue-main .queue-card .card-city {
+  border-bottom: 1px solid #ededed;
+}
+.queue .onlinequeue-main .queue-card .card-city h3 {
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  font-family: P-Nova;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.queue .onlinequeue-main .queue-card .card-map {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+  padding: 5px 10px 10px 5px;
+}
+.queue .onlinequeue-main .queue-card .card-map a {
+  display: inline-block;
+  position: relative;
+  width: 36%;
+  margin-top: 100px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: -1.5px 2px 0px 0px #a4a4a4;
+}
+.queue .onlinequeue-main .queue-card .card-map a i {
+  transform: rotate(45deg);
+  color: #000;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+}
+.queue .onlinequeue-main .queue-card .card-map a span {
+  font-family: P-Nova;
+  margin-top: 10px;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  color: #000;
+}
+.queue .onlinequeue-main .queue-card .card-adress {
+  padding: 1rem 0 0rem;
+  margin: 0 1.5rem;
+  border-bottom: 1px solid #ededed;
+}
+.queue .onlinequeue-main .queue-card .card-adress p {
+  font-family: P-Nova;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #5f6369;
+}
+.queue .onlinequeue-main .queue-card .card-time {
+  padding: 1rem 0 0rem;
+  margin: 0 1.5rem;
+}
+.queue .onlinequeue-main .queue-card .card-time p {
+  font-family: P-Nova;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #5f6369;
+}
+.queue .onlinequeue-main .queue-card .card-button {
+  padding: 1rem 0rem 0rem 1rem;
+}
+.queue .onlinequeue-main .queue-card .card-button button {
+  font-family: P-Nova;
+  border: none;
+  padding: 0.4rem 8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-color: #ffc533;
+  color: #000;
+  transition: 0.3s;
+}
+.queue .onlinequeue-main .queue-card .card-button button:hover {
+  background-color: #241d46;
+  color: #fff;
+}
+
 @media only screen and (min-width: 1120px) and (max-width: 1400px) {
   header .containers-big {
     display: none;
