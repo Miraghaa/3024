@@ -1531,6 +1531,9 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   width: 86%;
 }
 
+.information-generals-main {
+  overflow: hidden;
+}
 .information-generals-main .all-informations .information-head {
   background-image: url(../photos/sectionaxir/24bg.png);
   background-repeat: no-repeat;
@@ -1649,7 +1652,7 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   margin-left: 115px;
 }
 .information-generals-main .all-informations .information-boxs .information-box .ul5 li a {
-  margin-right: 115px;
+  margin-right: 100px;
 }
 .information-generals-main .all-informations .information-boxs .information-box .ul6 li img {
   width: 115%;
@@ -1794,13 +1797,12 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
 .queue .onlinequeue-main .queue-card .card-map a {
   display: inline-block;
   position: relative;
-  width: 36%;
+  width: 32%;
   margin-top: 100px;
-  border: 1px solid #ededed;
   background-color: #fff;
-  padding: 20px 40px;
+  padding: 20px 10px;
   border-radius: 5px;
-  box-shadow: -1.5px 2px 0px 0px #a4a4a4;
+  box-shadow: -1.5px 2px 5px 0px #d1cece;
 }
 .queue .onlinequeue-main .queue-card .card-map a i {
   transform: rotate(45deg);
@@ -1816,7 +1818,7 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   font-size: 12px;
   position: absolute;
   top: 0px;
-  right: 5px;
+  right: 10px;
   color: #000;
 }
 .queue .onlinequeue-main .queue-card .card-adress {
@@ -1843,15 +1845,16 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   color: #5f6369;
 }
 .queue .onlinequeue-main .queue-card .card-button {
-  padding: 1rem 0rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
 }
 .queue .onlinequeue-main .queue-card .card-button button {
   font-family: P-Nova;
   border: none;
-  padding: 0.4rem 8rem;
-  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
   text-align: center;
   background-color: #ffc533;
   color: #000;
@@ -1860,6 +1863,220 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
 .queue .onlinequeue-main .queue-card .card-button button:hover {
   background-color: #241d46;
   color: #fff;
+}
+
+.credit-main .credit-head {
+  background-image: url(../photos/sectionaxir/24bg.png);
+  background-size: cover;
+}
+.credit-main .credit-head .head-text h3 {
+  padding-top: 20px;
+  font-family: P-Nova;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  color: #fff;
+}
+.credit-main .credit-head .head-text p {
+  padding-bottom: 20px;
+  font-family: P-Nova;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.06em;
+  color: #5F6369;
+  margin-bottom: 0px;
+  max-width: 650px;
+  margin-top: 10px;
+  color: #fff;
+}
+.credit-main .credit-card {
+  background-color: #f5f5f5;
+}
+.credit-main .credit-card .card-head {
+  padding-top: 25px;
+}
+.credit-main .credit-card .card-head .card-buttons {
+  border-bottom: 1px solid #D7D8D6;
+}
+.credit-main .credit-card .card-head .card-buttons button {
+  font-family: P-Nova;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 0px;
+  transition: 0.3s;
+  color: #5F6369;
+  margin-right: 48px;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+}
+.credit-main .credit-card .card-head .card-buttons .active {
+  position: relative;
+}
+.credit-main .credit-card .card-head .card-buttons .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt {
+  padding: 3px 25px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo {
+  position: absolute;
+  width: 30%;
+  top: -30px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo img {
+  width: 90%;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo1 {
+  position: absolute;
+  width: 30%;
+  top: -29px;
+  left: 90px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo1 img {
+  width: 68%;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo2 {
+  position: absolute;
+  width: 30%;
+  top: -30px;
+  left: 10px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo2 img {
+  width: 91%;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo3 {
+  position: absolute;
+  width: 30%;
+  top: -30px;
+  left: 50px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo3 img {
+  width: 78%;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo4 {
+  position: absolute;
+  width: 20%;
+  top: -25px;
+  left: 70px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-photo4 img {
+  width: 100%;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text {
+  margin-left: 420px;
+  font-family: P-Nova;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text h4 {
+  font-style: normal;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #5F6369;
+  margin-bottom: 22px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text .card-phase ul {
+  display: flex;
+  position: relative;
+  margin-left: -28px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text .card-phase ul li {
+  padding: 0px 40px 0px 0px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text .card-phase ul li h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 10px;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  color: #231F20;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text .card-phase ul li p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.06em;
+  color: #5F6369;
+  margin-bottom: 24px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text .card-phase ul .short-line {
+  padding: 0px 20px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text .card-phase ul .short-line::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  height: 44px;
+  width: 1px;
+  background-color: #a4a4a4;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text ul {
+  display: flex;
+  margin-left: -30px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text ul .card-a2, .credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text ul .card-a3 {
+  margin-right: 16px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text ul .card-a2 a, .credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text ul .card-a3 a {
+  color: #5F6369;
+  background-color: #FFF;
+  border: 1px solid #D7D8D6;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #231F20;
+  padding: 16px 24px;
+  border-radius: 8px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text ul .card-a1 {
+  margin-right: 16px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text ul .card-a1 a {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 16px 24px;
+  line-height: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #231F20;
+  transition: background 0.2s;
+  background-color: #F9C20A;
+  border-radius: 10px;
+}
+.credit-main .credit-card .credit-info .credit-info1 .card-alltxt .alltxt-text ul .card-a1 a:hover {
+  background-color: #F58220;
 }
 
 @media only screen and (min-width: 1120px) and (max-width: 1400px) {

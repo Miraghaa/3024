@@ -97,7 +97,7 @@ for(let calcs of calc_buttons){
 
 
     let id = calcs.id
-    let div = document.querySelectorAll('.bank-calc-all div')
+    let div = document.querySelectorAll('.bank-calc-all .banks')
      
     for(let divs of div){
       if(divs.id === id){
@@ -221,3 +221,6 @@ sliderback.onclick = () => {
 setInterval(() => {
     NextSlide()
 }, 2000);
+
+
+
