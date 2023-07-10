@@ -8,6 +8,9 @@ let third_ul_ul3 = document.querySelector('.containers-big .third-ul .l3 ul')
 let first_ul = document.querySelector('.containers-big .first-ul')
 let qr = document.querySelector('.second-head-nav-right-l1')
 let qr_ul = document.querySelector('.second-head-nav-right-l1 ul')
+
+
+// diller bolmesi acilir
 language.onclick = () => {
   if( languageall.style.display === 'flex'){
     languageall.style.display = 'none'
@@ -16,7 +19,7 @@ language.onclick = () => {
   }
 }
 
-
+// sizin ucun bizim ucun altindaki xett
 let lis = document.querySelectorAll('.containers-big .first-ul li')
 
 for(let li of lis){
@@ -26,6 +29,9 @@ for(let li of lis){
     li.classList.add('first-ul-before')
   }
 }
+
+// haqqimizda onlayn novbe umumi melumatlar mousu ustune getirende bas veren prosesler
+// axtarisa basanda sag terefi silir ozu qalir nem mence bele daha qeweydi
 let body = document.querySelector('body')
 let second_ul = document.querySelector('.containers-big .second-ul')
 let search = document.querySelector('.containers-big .Search')
@@ -38,20 +44,22 @@ i.onclick = () =>{
   search.style.display = 'none'
   third_ul.style.display = 'flex'
 }
+
+
 third_ul_l1.onmouseover = () => {
   third_ul_ul1.style.opacity = 1
   third_ul_ul1.style.transform = 'scaleY(1)';
 }
-
 third_ul_l1.onmouseleave = () => {
   third_ul_ul1.style.opacity = 0
   third_ul_ul1.style.transform = 'scaleY(0)';
 }
+
+
 third_ul_l3.onmouseover = () => {
   third_ul_ul3.style.opacity = 1
   third_ul_ul3.style.transform = 'scaleY(1)';
 }
-
 third_ul_l3.onmouseleave = () => {
   third_ul_ul3.style.opacity = 0
   third_ul_ul3.style.transform = 'scaleY(0)';
@@ -62,13 +70,12 @@ qr.onmouseover = () => {
   qr_ul.style.opacity = 1
   qr_ul.style.transform = 'scaleY(1)';
 }
-
 qr.onmouseleave = () => {
   qr_ul.style.opacity = 0
   qr_ul.style.transform = 'scaleY(0)';
 }
 
-
+// esas seyfedeki tab menu
 let tab_buttons = document.querySelectorAll('.tab-button button')
 for(let tabs of tab_buttons){
   tabs.onclick = () =>{
@@ -89,6 +96,9 @@ for(let tabs of tab_buttons){
     }
    }
 }
+
+
+//calculyatorun tab menyusu
 let calc_buttons = document.querySelectorAll('.calc-button button')
 for(let calcs of calc_buttons){
   calcs.onclick = () =>{
@@ -98,7 +108,7 @@ for(let calcs of calc_buttons){
 
 
     let id = calcs.id
-    let div = document.querySelectorAll('.bank-calc-all .banks')
+    let div = document.querySelectorAll('.bank-calc-all div')
      
     for(let divs of div){
       if(divs.id === id){
@@ -109,8 +119,7 @@ for(let calcs of calc_buttons){
     }
   }
 }
-// calculator
-// sade
+// calculator hesablamaq
 function calculate() {
   let a = parseFloat(document.getElementById('range1').value)
   let b = parseFloat(document.getElementById('range2').value)
@@ -161,27 +170,16 @@ function update5() {
 document.querySelector('.inp4').addEventListener("input", update4);
 document.querySelector('.inp5').addEventListener("input", update5);
 
-
+//ekranin asagi dusende header reng vermisem
 window.onscroll = function(){
   if( document.body.scrollTop>150 || document.documentElement.scrollTop>150){
       document.querySelector('header').style.backgroundColor = 'white'
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 // slider islemsesi 
 
-
-const sliderContainer = document.querySelector('.slider-all');
+const slider_all = document.querySelector('.slider-all');
 const slidertext = document.querySelectorAll('.slider-text, .slider-text2');
 const sliderphotos = document.querySelectorAll('.slider-photo, .slider-photo2');
 const slidernext = document.querySelector('.slider-next');
@@ -215,16 +213,34 @@ function BackSlide() {
   }
   showSlide(x);
 }
-
 slidernext.onclick = () =>{
-  NextSlide()
+  NextSlide();
 }
 sliderback.onclick = () => {
-  BackSlide()
+  BackSlide();
 }
-setInterval(() => {
-    NextSlide()
-}, 2000);
+function startSlider() {
+  sliderInterval = setInterval(NextSlide, 2000);
+}
+startSlider(); 
+function stopSlider() {
+  clearInterval(sliderInterval);
+}
+slider_all.onmouseover = () => {
+  stopSlider();
+}
+
+slider_all.onmouseout = () => {
+  startSlider(); 
+}
+
+
+
+
+
+
+
+
 
 
 
