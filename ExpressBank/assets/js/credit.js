@@ -21,3 +21,28 @@ for( let btn of card_btns){
          }
   }
 }
+
+
+let kart_btns = document.querySelectorAll('.kart-card .card-buttons button')
+
+for( let btn of kart_btns){
+  btn.onclick = () => {
+    let actv = document.querySelector('.active')
+    actv.classList.remove('active')
+    btn.classList.add('active')
+
+
+    let id = btn.id
+    let div = document.querySelectorAll('.kart-info .kart-info1')
+
+         for(let dv of div){
+           
+            if(dv.id===id){
+                dv.classList.remove('d-none')
+            }else{
+                dv.classList.add('d-none')
+
+            }
+         }
+  }
+}

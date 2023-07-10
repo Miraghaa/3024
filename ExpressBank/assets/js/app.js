@@ -16,6 +16,7 @@ language.onclick = () => {
   }
 }
 
+
 let lis = document.querySelectorAll('.containers-big .first-ul li')
 
 for(let li of lis){
@@ -177,7 +178,7 @@ window.onscroll = function(){
 
 
 
-
+// slider islemsesi 
 
 
 const sliderContainer = document.querySelector('.slider-all');
@@ -201,6 +202,9 @@ function NextSlide() {
   if (x >= slidertext.length) {
     x = 0;
   }
+  
+  document.querySelector('.slider-text2').classList.remove('d-none')
+  document.querySelector('.slider-photo2').classList.remove('d-none')
   showSlide(x);
 }
 
