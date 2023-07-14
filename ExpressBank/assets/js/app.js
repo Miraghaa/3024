@@ -24,14 +24,14 @@ let lis = document.querySelectorAll('.containers-big .first-ul li')
 
 for(let li of lis){
   li.onclick = () =>{
-    let before = document.querySelector('.first-ul-before')
-    before.classList.remove('first-ul-before')
+    let f_bebore = document.querySelector('.first-ul-before')
+    f_bebore.classList.remove('first-ul-before')
     li.classList.add('first-ul-before')
   }
 }
 
 // haqqimizda onlayn novbe umumi melumatlar mousu ustune getirende bas veren prosesler
-// axtarisa basanda sag terefi silir ozu qalir nem mence bele daha qeweydi
+// axtaris
 let body = document.querySelector('body')
 let second_ul = document.querySelector('.containers-big .second-ul')
 let search = document.querySelector('.containers-big .Search')
@@ -119,6 +119,9 @@ for(let calcs of calc_buttons){
     }
   }
 }
+// sarixetet
+
+
 // calculator hesablamaq
 function calculate() {
   let a = parseFloat(document.getElementById('range1').value)
@@ -200,10 +203,10 @@ function NextSlide() {
   if (x >= slidertext.length) {
     x = 0;
   }
+  showSlide(x);
   
   document.querySelector('.slider-text2').classList.remove('d-none')
   document.querySelector('.slider-photo2').classList.remove('d-none')
-  showSlide(x);
 }
 
 function BackSlide() {
