@@ -257,7 +257,7 @@
                     <span>
                         <i class="fa-solid fa-chevron-up"></i>
                     </span>
-                    <a href="">AZ</a>
+                    <a style="color: gray;" href="">AZ</a>
                     <a href="">EN</a>
                     <a href="">RU</a>
                 </div>
@@ -630,28 +630,7 @@
                     </div>
                 </div>
                 <div class="tab-menu-alls">
-                    <div id="1" class="d-none tab-news-all">
-                        <div class="tab-news">
-                            <div class="news-card">
-                                <div class="news-content">
-                                    <h5>Polis əməkdaşlarına özəl <br> kampaniya</h5>
-                                    <div>02 iyul 2023</div>
-                                </div>
-                                <div class="news-content">
-                                    <h5>Expressbank-ın “Gənc Bankirlər” proqramı davam edir</h5>
-                                    <div>06 iyun 2023</div>
-                                </div>
-                                <div class="news-content">
-                                    <h5>Expressbank-ın “Gənc Bankirlər” proqramı davam edir</h5>
-                                    <div> 02 iyun 2023</div>
-                                </div>
-                            </div>
-                            <div class="btnn">
-                                <a href="">BÜTÜN XƏBƏRLƏR</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="2" class="tab-card-all">
+                    <div id="1" class="tbs tab-card-all">
                         <div class="tab-card">
                              <div class="card-photo">
                                 <img src="assets/photos/indextabphoto/expressbank_674_1681221466.png" alt="">
@@ -693,6 +672,27 @@
                             </div>
                        </div>
                     </div>
+                    <div id="2" class="tbs d-none tab-news-all">
+                        <div class="tab-news">
+                            <div class="news-card">
+                                <div class="news-content">
+                                    <h5>Polis əməkdaşlarına özəl <br> kampaniya</h5>
+                                    <div>02 iyul 2023</div>
+                                </div>
+                                <div class="news-content">
+                                    <h5>Expressbank-ın “Gənc Bankirlər” proqramı davam edir</h5>
+                                    <div>06 iyun 2023</div>
+                                </div>
+                                <div class="news-content">
+                                    <h5>Expressbank-ın “Gənc Bankirlər” proqramı davam edir</h5>
+                                    <div> 02 iyun 2023</div>
+                                </div>
+                            </div>
+                            <div class="btnn">
+                                <a href="">BÜTÜN XƏBƏRLƏR</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -702,26 +702,27 @@
                     <div class="calc-button">
                         <button id="1" class="calc-buttons">İpoteka krediti</button>
                         <button id="2">Qızıl girovlu kredit</button>
-                        <button id="">Valyuta məzənnəsi</button>
+                        <button id="3">Valyuta məzənnəsi</button>
                     </div>
                 </div>
                 <div class="bank-calc-all">
-                    <h4>Kalkulyator</h4>
-                    <div id="2" class=" bank-calc banks">
+                    <div id="1" class="banks  bank-calc ">
+                        <h4>Kalkulyator</h4>
                         <div class="all-inp">
                             <h5>Məlumatları daxil edin</h5>
                             <div class="inp inp1">
-                                <input readonly disabled class="inptext" type="text">
                                 <input class="range" type="range" name="range" id="range1" step="100" min="5000" max="150000" value="5000">
+                                <input readonly disabled class="inptext" type="text">
                                 <div> Kreditin məbləği</div>
                                 <span class="value1">5000</span>
                                 <span class="manat">AZN</span>
                             </div>
                             <div class="inp inp2">
+                                <input class="range rangeay" type="range" name="range" id="range2" step="1" min="12" max="360" value="48">
                                 <input readonly disabled class="inptext" type="text">
-                                <input class="range" type="range" name="range" id="range2" step="1" min="12" max="360" value="48">
                                 <div> Kreditin müddəti (Ay)</div>
-                                <span class="value2">48</span>                            </div>
+                                <span class="value2">48</span>                            
+                            </div>
                             <div class="inp">
                                 <input readonly  class="inptext" type="text">  
                                 <div> İpotekanın növü</div>
@@ -758,7 +759,8 @@
                              </div>
                         </div>
                     </div>
-                    <div id="1" class="bank-calc-qizil banks d-none">
+                    <div id="2" class="banks bank-calc-qizil  d-none">
+                        <h4>Kalkulyator</h4>
                         <div class="all-inp">
                             <h5>Məlumatları daxil edin</h5>
                             <div class="inp inp4">
@@ -770,7 +772,7 @@
                             </div>
                             <div class="inp inp5">
                                 <input readonly disabled class="inptext" type="text">
-                                <input class="range" type="range" name="range" id="rangeqizil2" step="1" min="3" max="36" value="12">
+                                <input class="range golday" type="range" name="range" id="rangeqizil2" step="1" min="3" max="36" value="12">
                                 <div> Kreditin müddəti (Ay)</div>
                                 <span class="value7">12</span>                            
                             </div>
@@ -809,6 +811,52 @@
                              <div class="bank-show-go">
                                 <a href="">SİFARİŞ ETMƏK</a>
                              </div>
+                        </div>
+                    </div>
+                    <div id="3" class="banks exchange d-none">
+                        <div class="exc-head">
+                            <ul class="exc-head-ul">
+                                <li id="4" class="acto">Nağd</li>
+                                <li id="5" >Nağdsız</li>
+                                <li id="6" >Kart əməliyyatları</li>
+                                <li class="exc-li4">15-07-2023</li>
+                            </ul>
+                        </div>
+                        <div class="exc-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="exc-table-text">Valyuta</th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/usd.73455e9a.svg" alt="">
+                                            USD
+                                        </th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/eur.8c50dc59.svg" alt="">
+                                             EUR
+                                        </th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/rur.7e068255.svg" alt="">
+                                            RUR
+                                        </th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/gbp.c0ebaf5f.svg" alt="">
+                                            GBP
+                                        </th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/ytl.cf9dc26c.svg" alt="">
+                                            TRY
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="4" class="bodys">
+                                    
+                                </tbody>
+                                <tbody id="5" class="bodys xxcc d-none">
+                                </tbody>
+                                <tbody id="6" class="bodys xxc d-none">
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -939,12 +987,11 @@
                     <div class="calc-button">
                         <button id="1" class="calc-buttons">İpoteka krediti</button>
                         <button id="2">Qızıl girovlu kredit</button>
-                        <button id="">Valyuta məzənnəsi</button>
+                        <button id="3">Valyuta məzənnəsi</button>
                     </div>
                 </div>
                 <div class="bank-calc-all">
-                    <h4>Kalkulyator</h4>
-                    <div id="2" class=" bank-calc banks">
+                    <div id="1" class=" bank-calc banks">
                         <div class="all-inp">
                             <h5>Məlumatları daxil edin</h5>
                             <div class="inp inp8">
@@ -994,7 +1041,7 @@
                              </div>
                         </div>
                     </div>
-                    <div id="1" class="bank-calc-qizil banks d-none">
+                    <div id="2" class="bank-calc-qizil banks d-none">
                         <div class="all-inp">
                             <h5>Məlumatları daxil edin</h5>
                             <div class="inp inp4">
@@ -1045,6 +1092,52 @@
                              <div class="bank-show-go">
                                 <a href="">SİFARİŞ ETMƏK</a>
                              </div>
+                        </div>
+                    </div>
+                    <div id="3" class="banks exchange-tel d-none">
+                        <div class="exc-head">
+                            <ul class="exc-head-ul">
+                                <li id="4" class="acto">Nağd</li>
+                                <li id="5" >Nağdsız</li>
+                                <li id="6" >Kart əməliyyatları</li>
+                                <li class="exc-li4">15-07-2023</li>
+                            </ul>
+                        </div>
+                        <div class="exc-table-tel">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="exc-table-text">Valyuta</th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/usd.73455e9a.svg" alt="">
+                                            USD
+                                        </th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/eur.8c50dc59.svg" alt="">
+                                             EUR
+                                        </th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/rur.7e068255.svg" alt="">
+                                            RUR
+                                        </th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/gbp.c0ebaf5f.svg" alt="">
+                                            GBP
+                                        </th>
+                                        <th>
+                                            <img src="https://www.expressbank.az/assets/img/ytl.cf9dc26c.svg" alt="">
+                                            TRY
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="4" class="bodys">
+                                    
+                                </tbody>
+                                <tbody id="5" class="bodys xxcc d-none">
+                                </tbody>
+                                <tbody id="6" class="bodys xxc d-none">
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

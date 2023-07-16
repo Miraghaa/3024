@@ -95,27 +95,4 @@ slider_alls.onmouseout = () => {
 
 
 
-function calculate() {
-    let a = parseFloat(document.getElementById('range7').value)
-    let b = parseFloat(document.getElementById('range8').value)
-    let c = parseFloat(document.getElementById('range9').value)
-  
-    num=(a*c)/100
-    num1=a+num;
-    num3=(num1/b).toFixed(2)
-  
-    document.querySelector('.bank-show .bankkk').innerHTML = num3;
-    document.querySelector('.bank-show .bankkkk').innerHTML = num1;
-  }
-  function update1() {
-    document.querySelector('.inp8 .value8').innerHTML = document.getElementById('range7').value;
-    calculate();
-  }
-  
-  function update2() {
-    document.querySelector('.inp9 .value9').innerHTML = document.getElementById("range8").value;
-    calculate();
-  }
-  
-  document.querySelector('.inp8').addEventListener("input", update1);
-  document.querySelector('.inp9').addEventListener("input", update2);
+

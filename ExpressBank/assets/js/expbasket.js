@@ -19,15 +19,29 @@ function getems() {
         `
     } 
     document.querySelector('.miris').innerHTML = n
-}
-getems()
-
-
-let dlt = document.querySelectorAll('.card-content i')
+    let dlt = document.querySelectorAll('.card-content i')
 
 for(let del of dlt){
    del.onclick = () => {
-    del.parentElement.parentElement.parentElement.remove()
+    let src = del.parentElement.previousElementSibling.children[0].src
+    let kartfilter = items.filter(z => z.sekil != src)
+    localStorage.setItem('karts',JSON.stringify(kartfilter))
+    getems()
+    showS()
    }
 }
+}
+getems()
+
+function showS() {
+    let karts = JSON.parse(localStorage.getItem('karts'))
+    if(karts.length === 0){
+        document.querySelector('.tupoy').classList.remove('d-none')
+     }
+     else{
+       document.querySelector('.tupoy').classList.add('d-none')
+     }
+}
+showS()
+
 

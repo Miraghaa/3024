@@ -83,38 +83,36 @@ for(let tabs of tab_buttons){
     tbs.classList.remove('tab-buttons')
     tabs.classList.add('tab-buttons')
      
-
-    let id = tabs.id
-    let div = document.querySelectorAll('.tab-menu-alls div')
-     
-    for(let divs of div){
-      if(divs.id === id){
-        divs.classList.add('d-none')
+    let id  = tabs.id
+    let div = document.querySelectorAll('.tbs')
+    for(let frst of div){
+      if(frst.id===id){
+        frst.classList.remove('d-none')
       }else{
-        divs.classList.remove('d-none')
+        frst.classList.add('d-none')
       }
     }
-   }
+  }
 }
 
 
 //calculyatorun tab menyusu
 let calc_buttons = document.querySelectorAll('.calc-button button')
-for(let calcs of calc_buttons){
-  calcs.onclick = () =>{
+for(let calc of calc_buttons){
+  calc.onclick = () =>{
     let clcs = document.querySelector('.calc-buttons')
     clcs.classList.remove('calc-buttons')
-    calcs.classList.add('calc-buttons')
-
-
-    let id = calcs.id
-    let div = document.querySelectorAll('.bank-calc-all div')
+    calc.classList.add('calc-buttons')
      
-    for(let divs of div){
-      if(divs.id === id){
-        divs.classList.add('d-none')
+
+
+    let id = calc.id
+    let div = document.querySelectorAll('.banks')
+    for(let scnd of div){
+      if(scnd.id===id){
+        scnd.classList.remove('d-none')
       }else{
-        divs.classList.remove('d-none')
+        scnd.classList.add('d-none')
       }
     }
   }
@@ -241,9 +239,143 @@ slider_all.onmouseout = () => {
 
 
 
+// sarixett
+const rangeInputs = document.querySelectorAll('input[type="range"]') 
+const numberInput = document.querySelector('input[type="number"]')
+function handleInputChange(e) {
+let target = e.target
+if (e.target.type !== 'range') {
+target = document. getElementById('range')
+}
+const min = target.min
+const max = target.max
+const val = target.value
+target.style. backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+document. querySelector('.inp1').addEventListener ("input",update1);
+ document .querySelector('.inp2').addEventListener("input", update2);
+}
+rangeInputs.forEach(input => {
+  input.addEventListener('input', handleInputChange)
+})
 
 
 
 
 
+function getusers() {
+  fetch('https://v6.exchangerate-api.com/v6/6ffd536b8d111bdc8b94fd4b/latest/AZN')
+  .then(res=> res.json())
+  .then(data=>{
+      let exc = `
+      <tr>
+        <th class="exc-table-txt2">ARMB</th>
+        <th>${(1/data.conversion_rates.USD).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.EUR).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.RUB).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.GBP).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.TRY).toFixed(4)}</th>
+       </tr>
+       <tr>
+        <th class="exc-table-txt2">Alış</th>
+        <th>${((1/data.conversion_rates.USD)-0.005).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.EUR)-0.0247).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.RUB)-0.0018).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.GBP)-0.0423).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.TRY)-0.0151).toFixed(4)}</th>
+       </tr>
+       <tr>
+        <th class="exc-table-txt2">Satış</th>
+        <th>${((1/data.conversion_rates.USD)).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.EUR)+0.0153).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.RUB)+0.0008).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.GBP)+0.0277).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.TRY)+0.0149).toFixed(4)}</th>
+       </tr>
+      `
+      let exc2 = `
+      <tr>
+        <th class="exc-table-txt2">ARMB</th>
+        <th>${(1/data.conversion_rates.USD).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.EUR).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.RUB).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.GBP).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.TRY).toFixed(4)}</th>
+       </tr>
+       <tr>
+        <th class="exc-table-txt2">Alış</th>
+        <th>${((1/data.conversion_rates.USD)-0.001).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.EUR)-0.0197).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.RUB)-0.0005).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.GBP)-0.0343).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.TRY)-0.065).toFixed(4).slice(1)}</th>
+       </tr>
+       <tr>
+        <th class="exc-table-txt2">Satış</th>
+        <th>${((1/data.conversion_rates.USD)+0.0025).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.EUR)+0.0113).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.RUB)+0.0008).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.GBP)+0.0137).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.TRY)-0.0650).toFixed(4).slice(1)}</th>
+       </tr>
+      `
+      let exc3 = `
+      <tr>
+        <th class="exc-table-txt2">ARMB</th>
+        <th>${(1/data.conversion_rates.USD).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.EUR).toFixed(4)}</th>
+        <th>${(0/data.conversion_rates.RUB).toFixed(4)}</th>
+        <th>${(1/data.conversion_rates.GBP).toFixed(4)}</th>
+        <th>${(0/data.conversion_rates.TRY).toFixed(4)}</th>
+       </tr>
+       <tr>
+        <th class="exc-table-txt2">Alış</th>
+        <th>${((1/data.conversion_rates.USD)-0.005).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.EUR)-0.0247).toFixed(4)}</th>
+        <th>${((0/data.conversion_rates.RUB)+0.0000).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.GBP)-0.0393).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.TRY)-0.065).toFixed(4).slice(1)}</th>
+       </tr>
+       <tr>
+        <th class="exc-table-txt2">Satış</th>
+        <th>${((1/data.conversion_rates.USD)+0.0025).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.EUR)+0.0163).toFixed(4)}</th>
+        <th>${((0/data.conversion_rates.RUB)+0.0000).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.GBP)+0.0187).toFixed(4)}</th>
+        <th>${((1/data.conversion_rates.TRY)-0.0650).toFixed(4).slice(1)}</th>
+       </tr>
+      `
+      document.querySelector('.exc-table tbody').innerHTML=exc
+      document.querySelector('.exc-table .xxcc').innerHTML=exc2
+      document.querySelector('.exc-table .xxc').innerHTML=exc3
 
+      document.querySelector('.exc-table-tel tbody').innerHTML=exc
+      document.querySelector('.exc-table-tel .xxcc').innerHTML=exc2
+      document.querySelector('.exc-table-tel .xxc').innerHTML=exc3
+  
+  })
+  .catch(err => console.log(Error))
+}
+getusers()
+
+
+let exchead_ul = document.querySelectorAll('.exc-head-ul li')
+
+for(let excul of exchead_ul) {
+  excul.onclick= () =>{
+    let acto = document.querySelector('.acto')
+    acto.classList.remove('acto')
+    excul.classList.add('acto')
+
+
+    let id = excul.id
+    let div = document.querySelectorAll('.bodys')
+    for(let thrd of div){
+      if(thrd.id === id){
+           thrd.classList.remove('d-none')
+      }
+      else{
+        thrd.classList.add('d-none')
+      }
+    }
+  }
+}

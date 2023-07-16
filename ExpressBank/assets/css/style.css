@@ -20,11 +20,11 @@ header .containers-big .header-left .language-all {
   flex-direction: column;
   position: absolute;
   top: 45px;
-  left: -12px;
+  left: -2px;
   z-index: 10;
   background-color: white;
   border: 2px solid #ededed;
-  padding: 15px 30px;
+  padding: 15px 20px 0px;
   border-radius: 10px;
 }
 header .containers-big .header-left .language-all i {
@@ -1132,18 +1132,12 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   z-index: 999;
 }
 .indexmain .calculator .container-main .bank-calc-all {
-  margin: 20px 0px;
+  margin: 50px 0px 20px;
   background-color: #fff;
-  /* Input Thumb */
-}
-.indexmain .calculator .container-main .bank-calc-all h4 {
-  font-family: P-Nova;
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  margin: 20px 0;
 }
 .indexmain .calculator .container-main .bank-calc-all .bank-calc {
+  margin-top: 100px;
+  position: relative;
   border: 1px solid #ededed;
   display: flex;
   background-color: #fff;
@@ -1212,6 +1206,9 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   background-color: #fff;
   border: 1px solid #ededed;
   cursor: pointer;
+}
+.indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp .rangeay {
+  background-size: 10%;
 }
 .indexmain .calculator .container-main .bank-calc-all .bank-calc .all-inp .inp div {
   position: absolute;
@@ -1309,12 +1306,23 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
 .indexmain .calculator .container-main .bank-calc-all .bank-calc .bank-show .bank-show-go a:hover {
   background: #FAA61A;
 }
+.indexmain .calculator .container-main .bank-calc-all .bank-calc h4 {
+  position: absolute;
+  font-family: P-Nova;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin: 20px 0 20px;
+  top: -70px;
+}
 .indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil {
+  position: relative;
   border: 1px solid #ededed;
   display: flex;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 20px 8px #ededed;
+  margin-top: 100px;
 }
 .indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp {
   display: flex;
@@ -1345,7 +1353,7 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
 }
 .indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .linex {
   position: absolute;
-  width: 140%;
+  width: 37%;
   left: 10px;
   bottom: 0px;
   height: 2px;
@@ -1401,6 +1409,9 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
 }
 .indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .range1::-webkit-slider-thumb {
   -webkit-appearance: none;
+}
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp .golday {
+  background-size: 30%;
 }
 .indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .all-inp .inp div {
   position: absolute;
@@ -1495,6 +1506,88 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
 .indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil .bank-show .bank-show-go a:hover {
   background: #FAA61A;
 }
+.indexmain .calculator .container-main .bank-calc-all .bank-calc-qizil h4 {
+  position: absolute;
+  font-family: P-Nova;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  margin: 20px 0;
+  top: -70px;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange {
+  font-family: P-Nova;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-head {
+  border-bottom: 1px solid #D7D8D6;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-head ul {
+  display: flex;
+  margin-left: -25px;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-head ul li {
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #231F20;
+  padding-bottom: 10 px;
+  margin-right: 40px;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-head ul .acto::before {
+  content: "";
+  position: absolute;
+  width: 110%;
+  bottom: -16px;
+  left: -3px;
+  background-color: #000;
+  height: 1px;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-head ul .exc-li4 {
+  margin-left: 860px;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-table table {
+  margin: 25px 0px;
+  width: 100%;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-table table thead tr th {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding: 15px;
+  border-bottom: 1px solid #D7D8D6;
+  text-align: center;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-table table thead tr .exc-table-text {
+  text-align: start;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: #616173;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-table table tbody {
+  font-family: P-Nova;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-table table tbody tr th {
+  font-weight: 500;
+  padding: 15px;
+  border-bottom: 1px solid #D7D8D6;
+  text-align: center;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.indexmain .calculator .container-main .bank-calc-all .exchange .exc-table table tbody tr .exc-table-txt2 {
+  text-align: start;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+  color: #616173;
+}
 .indexmain .calculator .container-main .bank-calc-all input[type=range] {
   -webkit-appearance: none;
   margin-right: 15px;
@@ -1503,7 +1596,7 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   background: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   background-image: linear-gradient(#f9c20a, #f9c20a);
-  background-size: 70% 100%;
+  background-size: 0% 100%;
   background-repeat: no-repeat;
   position: absolute;
   bottom: 0px;
@@ -2418,6 +2511,8 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   margin-right: 16px;
 }
 .kart-main .kart-card .kart-info .kart-info1 .card-alltxt .alltxt-text ul .card-a1 a {
+  display: inline-block;
+  margin-left: 15px;
   font-weight: normal;
   font-size: 14px;
   padding: 16px 24px;
@@ -2500,6 +2595,8 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   margin-right: 16px;
 }
 .kart-main .kart-card .kart-info .kart-info1 .card-alltxt .alltxt-text1 ul .card-a2 a, .kart-main .kart-card .kart-info .kart-info1 .card-alltxt .alltxt-text1 ul .card-a3 a {
+  display: inline-block;
+  margin-left: 20px;
   color: #5F6369;
   background-color: #FFF;
   border: 1px solid #D7D8D6;
@@ -2516,6 +2613,8 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   margin-right: 16px;
 }
 .kart-main .kart-card .kart-info .kart-info1 .card-alltxt .alltxt-text1 ul .card-a1 a {
+  display: inline-block;
+  margin-left: 15px;
   font-weight: normal;
   font-size: 14px;
   padding: 16px 24px;
@@ -2605,6 +2704,20 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+.expbasket-main .tupoy {
+  margin: -200px auto 150px;
+  text-align: center;
+}
+.expbasket-main .tupoy i {
+  cursor: pointer;
+  font-size: 80px;
+  display: inline-block;
+  margin: 160px 0 20px;
+  color: #000;
+}
+.expbasket-main .tupoy i:hover {
+  color: orange;
 }
 
 .miris {
@@ -3626,6 +3739,77 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   .indexmain-tel .calculator .bank-calc-all .bank-calc-qizil .bank-show .bank-show-go a:hover {
     background: #FAA61A;
   }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel {
+    font-family: P-Nova;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-head {
+    border-bottom: 1px solid #D7D8D6;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-head ul {
+    width: 120%;
+    display: flex;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-head ul li {
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    color: #231F20;
+    margin-right: 40px;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-head ul .acto::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    bottom: -16px;
+    left: -3px;
+    background-color: #000;
+    height: 1px;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-table-tel {
+    overflow: scroll;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-table-tel table {
+    margin: 25px 0px;
+    width: 160%;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-table-tel table thead tr th {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.06em;
+    color: #000000;
+    padding: 15px;
+    border-bottom: 1px solid #D7D8D6;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-table-tel table thead tr .exc-table-text {
+    text-align: start;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    color: #616173;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-table-tel table tbody {
+    font-family: P-Nova;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-table-tel table tbody tr th {
+    font-weight: 500;
+    padding: 15px;
+    border-bottom: 1px solid #D7D8D6;
+    text-align: center;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+  .indexmain-tel .calculator .bank-calc-all .exchange-tel .exc-table-tel table tbody tr .exc-table-txt2 {
+    text-align: start;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0.06em;
+    color: #616173;
+  }
   .indexmain-tel .section-son {
     margin: 120px 0px 10px;
     background-image: url(../photos/sectionaxir/24bg.png);
@@ -4324,6 +4508,7 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   }
   .kart-main-tel .kart-card .card-head {
     padding-top: 25px;
+    position: relative;
   }
   .kart-main-tel .kart-card .card-head .card-buttons {
     display: flex;
@@ -4352,6 +4537,34 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
     width: 85%;
     height: 1px;
     background-color: #000;
+  }
+  .kart-main-tel .kart-card .card-head .icon {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    z-index: 100001;
+    transition: 0.2s;
+  }
+  .kart-main-tel .kart-card .card-head .icon:hover i {
+    color: orange;
+  }
+  .kart-main-tel .kart-card .card-head .icon:hover span {
+    background-color: orange;
+  }
+  .kart-main-tel .kart-card .card-head .icon i {
+    font-size: 20px;
+    color: #000;
+  }
+  .kart-main-tel .kart-card .card-head .icon span {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    font-size: 8px;
+    z-index: 500000;
+    color: #fff;
+    border-radius: 50%;
+    background-color: black;
+    padding: 4px 8px;
   }
   .kart-main-tel .kart-card .kart-info .kart-info1 .card-alltxt {
     padding: 3px 25px 20px;
@@ -4462,6 +4675,7 @@ footer .footer-footnav .foot-nav ul .foot-nav-l6 img {
   .kart-main-tel .kart-card .kart-info .kart-info1 .card-alltxt .alltxt-text .as .card-a1 a {
     display: inline-block;
     width: 110%;
+    margin-top: 10px !important;
     text-align: center;
     font-weight: normal;
     font-size: 14px;

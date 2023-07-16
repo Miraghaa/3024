@@ -52,9 +52,9 @@ if(localStorage.getItem('karts') === null){
     let btns2 = document.querySelector('.card-asg a')
 
      btns2.onclick = () => {
-         let img = document.querySelector('.bs img').src
-         let text = document.querySelector('.bs h4').innerHTML
-         let text1 = document.querySelector('.bs p').innerHTML
+         let img = document.querySelector('.alltxt-photo4 img').src
+         let text = document.querySelector('.alltxt-text h4').innerHTML
+         let text1 = document.querySelector('.alltxt-text p').innerHTML
          let baskets = JSON.parse(localStorage.getItem('karts'))
          let exist = baskets.find(x=> x.sekil === img)
       
@@ -70,13 +70,12 @@ if(localStorage.getItem('karts') === null){
          show()
     }
 
-
     let btns3 = document.querySelector('.card-ash a')
 
     btns3.onclick = () => {
-          let img = document.querySelector('.alltxt-photo4 img').src
-          let text = document.querySelector('.alltxt-text h4').innerHTML
-          let text1 = document.querySelector('.alltxt-text p').innerHTML
+          let img = document.querySelector('.bs img').src
+          let text = document.querySelector('.bs h4').innerHTML
+          let text1 = document.querySelector('.bs p').innerHTML
           let baskets = JSON.parse(localStorage.getItem('karts'))
           let exist = baskets.find(x=> x.sekil === img)
       
@@ -90,7 +89,6 @@ if(localStorage.getItem('karts') === null){
           localStorage.setItem('karts',JSON.stringify(baskets))
           show()    
     }
-
 
     function show() {
         let basketa  = JSON.parse(localStorage.getItem('karts'))
